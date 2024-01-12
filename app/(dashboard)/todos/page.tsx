@@ -1,7 +1,18 @@
+import db from '@/utils/db'
+import TodoList from '@/componets/TodoList'
 
+const getData = async () => {
+    const todos = await db.todo.findMany({})
+    console.log(todos)
+    return todos
+}
 
-export default function Page(){
+const TodosPage = async () => {
+    const todos = await getData
     return(
-        <p>Tim</p>
+        <div><TodoList todos={todos} /></div>
     )
 }
+
+
+export default TodosPage
