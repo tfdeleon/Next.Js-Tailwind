@@ -8,7 +8,7 @@ const getData = async () => {
 }
 
 const TodosPage = async () => {
-    const todos = await getData
+    const todos = await getData()
     return(
         <div><TodoList todos={todos} /></div>
     )

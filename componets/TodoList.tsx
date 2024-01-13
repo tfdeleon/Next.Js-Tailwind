@@ -1,10 +1,10 @@
-import Todo from './Todo';
+import TodoItem from './Todo';
 
 const TodoList = ({ todos }) => {
   return (
     <div>
       {todos.map((todo) => (
-        <Todo todo={todo} key={todo.id} />
+        <TodoItem todo={todo} key={todo.id} />
       ))}
     </div>
   );
