@@ -1,4 +1,4 @@
-import NewTodoForm from '@/componets/NewTodoForm'
+import NewTodoForm from '@/components/NewTodoForm'
 
 const DashboardLayout = ({ children }) => {
     return (

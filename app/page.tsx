@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import TodoForm from '@/componets/NewTodoForm'
+import TodoForm from '@/components/NewTodoForm'
 
 const getData = async () =>{
   await new Promise((res) => setTimeout(() => res(0),2000))
